@@ -9,6 +9,7 @@ header{
 }
 footer{
     text-align: center;
+    position: bottom;
     font-size: 12px;
     padding-top: 200px;
 }
