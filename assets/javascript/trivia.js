@@ -26,7 +26,7 @@ var triviaQuestions = [{
 	answer: 3
 },{
 	question: "How many sequels does Pixar currently have released? (as of August 2016)",
-	answerList: ["5", "3", "6", "7"],
+	answerList: ["5", "3", "6", "9"],
 	answer: 0
 },{
 	question: "Which film won Pixar's first Academy Award for Best Animated Feature?",
@@ -42,11 +42,11 @@ var triviaQuestions = [{
 	answer: 1
 },{
 	question: "Billy Crystal voices Mike Wazowski in 'Monster, Inc.' but what role did he originally turn down from Pixar?",
-	answerList: ["Hopper", "Woody", "Marlin", "Buzz Lightyear"],
+	answerList: ["Bulls-Eye", "Woody", "Marlin", "Buzz Lightyear"],
 	answer: 3
 },{
 	question: "The voice of WALL-E, Ben Burtt, also voiced what other famous robot?",
-	answerList: ["R2-D2", "Alpha 5", "C-3PO", "Astro Boy"],
+	answerList: ["R2-D2", "Alpha 5", "C-3PO", "BB-8"],
 	answer: 0
 },{
 	question: "Brad Bird directed which animated film prior to taking on 'The Incredibles'?",
@@ -80,8 +80,8 @@ var currentQuestion; var correctAnswer; var incorrectAnswer; var unanswered; var
 var messages = {
 	correct: "Yes, that's right!",
 	incorrect: "No, that's not it.",
-	endTime: "Out of time!",
-	finished: "Alright! Let's see how well you did."
+	endTime: "You are out of time!",
+	finished: "Here are you results!!"
 }
 
 // create function for the start button and embed newGame function to start timer and generate questions
