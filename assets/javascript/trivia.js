@@ -57,7 +57,7 @@ var triviaQuestions = [{
 	answerList: ["Dreamworks", "Industrial Light & Magic", "Disney", "Lucasfilm"],
 	answer: 3
 },{
-	question: "What is the name of the famour explorer from 'Up' that Carl looked up to as a boy?",
+	question: "What is the name of the famous explorer from 'Up' that Carl looked up to as a boy?",
 	answerList: ["Charles F. Muntz", "Chuck M. James", "Charlie Rose", "Carl Carlton"],
 	answer: 0
 },{
@@ -84,6 +84,8 @@ var messages = {
 	finished: "Here are you results!!"
 }
 
+// -------------------------------
+
 // create function for the start button and embed newGame function to start timer and generate questions
 $('#startBtn').on('click', function(){
 	$(this).hide();
@@ -95,6 +97,8 @@ $('#startOverBtn').on('click', function(){
 	$(this).hide();
 	newGame();
 });
+
+// --------------------------------
 
 // create function for the game itself
 function newGame(){
@@ -135,7 +139,7 @@ function newQuestion(){
 	});
 }
 
-// function for the timer to start at the beginning of the game
+// function for the timer to start at the beginning of the game and display the declining time per question
 function countdown(){
 	seconds = 10;
 	$('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
